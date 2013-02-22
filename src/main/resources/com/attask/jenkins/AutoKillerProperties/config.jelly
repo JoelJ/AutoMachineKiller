@@ -1,0 +1,14 @@
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+	<f:section title="Auto Machine Killer">
+		<f:entry title="Enabled" field="enabled">
+			<f:checkbox/>
+		</f:entry>
+		<f:entry title="Machine Name Pattern" field="pattern"
+				 description="Regular Expression. Only machines that match this pattern will be taken offline.">
+			<f:textbox/>
+		</f:entry>
+		<f:entry title="Teardown if worse than or equal to" field="worseThan">
+			<f:select default="FAILURE" />
+		</f:entry>
+	</f:section>
+</j:jelly>
